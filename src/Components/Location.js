@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Location() {
+export default function Location({place}) {
     return (
         <section className="travel-location">
             <div className="image-container">
@@ -9,18 +9,20 @@ export default function Location() {
             <div className="desc-container">
                 <div className="desc-location">
                     <div className="location-top">
-                        <h3>SKYRIM</h3>
-                        <a href="#">View on Google Maps</a>
+                        <h3>{place.location}</h3>
+                        <a href={place.googleMapsUrl}>View on Google Maps</a>
                     </div>
                     <div className="location-bot">
-                        <h2>WHITERUN</h2>
+                        <h2>{place.title}</h2>
                     </div>
                 </div>
                 <div className="dates-visited">
-                    15 Second Seed, 4E 203 - 28 Second Seed, 4E 203 
+                    {place.startDate} - {place.endDate}
                 </div>
                 <div className="desc">
-                    <p>Whiterun is teh capital city of Whiterun Hold, in the center of Skyrim. In whiterun, you can find strong Nord women on strong Nord crack.</p>
+                    <p>
+                        {place.description}
+                    </p>
                 </div>
             </div>
         </section>

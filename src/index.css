@@ -30,6 +30,7 @@ div, main, header, section, aside {
 
 .travel-location {
     padding: 0 1rem 2rem 1rem;
+    margin-bottom: 2rem;
     border-bottom: 2px solid #f5f5f5;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
