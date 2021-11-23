@@ -1,13 +1,89 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: #e5e5e5;
+    font-size: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+div, main, header, section, aside {
+    box-sizing: border-box;
+}
+
+.App {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.journal--header {
+    background-color: #F55A5A;
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.location-container {
+    padding: 2rem;
+}
+
+.travel-location {
+    padding: 0 1rem 2rem 1rem;
+    border-bottom: 2px solid #f5f5f5;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-placeholder {
+    width: 200px;
+    height: 268px;
+    background-color: #e5e5e5;
+}
+
+.desc-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0 0 2rem;
+}
+
+.desc-container a {
+    color: #918E9B;
+}
+
+.desc-location {
+    display: flex;
+    flex-direction: column;
+}
+
+.location-top {
+    display: flex;
+    margin: 0 0 1rem 0;
+}
+
+.location-bot {
+    margin: 0 0 1rem 0;
+}
+
+.location-bot h2 {
+    margin: 0; 
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+}
+
+.desc-location h3 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    padding: 0 1rem 0 0;
+    margin: 0;
+}
+
+.dates-visited {
+    font-size: 1.1rem;
+}
+
+.desc {
+    line-height: 1.5;
+    font-size: 1rem;
 }
